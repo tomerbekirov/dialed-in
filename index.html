@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dialed In — exact grind settings for your grinder</title>
+<meta name="description" content="Pick your grinder and brew method. Get the exact starting setting in your grinder's own numbers, tuned to your beans. Join the waitlist.">
+<meta property="og:title" content="Dialed In — your grinder, dialed in">
+<meta property="og:description" content="Exact grind settings for 38 grinders. V60, AeroPress, espresso. Join the waitlist.">
+<meta property="og:image" content="hub.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+:root{--bg:#0C0A09;--surface:#171412;--line:#26211E;--fg:#F5F0EB;--muted:#A3968A;--amber:#E08A3C;--em:#4ADE80;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+img{max-width:100%;height:auto}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.55 Geist,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(110% 60% at 50% -10%,rgba(224,138,60,.16),transparent 60%)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.015em}
+header{display:flex;align-items:center;height:72px}
+.logo{font-size:30px;color:var(--fg);text-decoration:none}.logo i{color:var(--amber)}
+.hero{display:grid;gap:48px;align-items:center;padding:40px 0 72px}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr .9fr;padding:72px 0 96px}}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+h1{font-size:clamp(48px,9vw,88px);line-height:1;margin:14px 0 20px}
+h1 i{color:var(--amber)}
+.lead{font-size:19px;color:var(--muted);max-width:520px}
+.lead b{color:var(--fg);font-weight:600}
+.join{margin-top:32px;max-width:480px;padding:18px;border-radius:22px;background:var(--surface);border:1px solid var(--line)}
+.join p{font-size:14px;color:var(--muted);margin-top:10px}
+.soon{display:flex;flex-wrap:wrap;gap:10px}.soon input{flex:1 1 200px;min-width:0;height:52px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:0 16px;font:inherit}
+.soon button{flex:1 1 auto;height:52px;padding:0 20px;border:0;border-radius:14px;font:600 15px Geist,sans-serif;color:#1A0F06;background:linear-gradient(180deg,#EC9A50,var(--amber));opacity:.55}
+.phone{justify-self:center;width:min(320px,80vw);border-radius:44px;overflow:hidden;border:8px solid var(--line);box-shadow:0 50px 100px -40px rgba(0,0,0,.9)}
+.phone img{display:block;width:100%}
+.feats{display:grid;gap:16px;padding-bottom:88px}
+@media(min-width:760px){.feats{grid-template-columns:repeat(3,1fr)}}
+.feat{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.feat h3{font-size:18px;font-weight:600}.feat p{color:var(--muted);font-size:15px}
+.feat .num{font:400 30px 'Geist Mono',monospace;color:var(--em)}
+.feat img{border-radius:14px;border:1px solid var(--line);width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="logo serif" href="./">Dialed<i>In</i></a></header>
+
+  <section class="hero">
+    <div>
+      <span class="eyebrow">Coming soon to iPhone and Android</span>
+      <h1 class="serif">Your grinder,<br><i>dialed in.</i></h1>
+      <p class="lead">Pick your grinder and brew method. Get the <b>exact starting setting in your grinder's own numbers</b>, tuned to your beans. Then taste, tap, adjust.</p>
+      <div class="join" id="join">
+        <!-- WAITLIST: paste the Tally form id into data-tally-id (e.g. "w4XyZ1"); until then a disabled placeholder shows. -->
+        <div id="tally" data-tally-id=""></div>
+        <p>One email when the app launches. No spam, unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="phone"><img src="hub.jpg" alt="Dialed In app showing 21 clicks on a Comandante C40 for V60" width="1170" height="2532"></div>
+  </section>
+
+  <section class="feats">
+    <div class="feat">
+      <span class="num">38</span>
+      <h3>Grinders, in their own language</h3>
+      <p>Clicks, dials, rotation-number-click. Comandante, 1Zpresso, Fellow, Niche, DF and more, for V60, AeroPress and espresso.</p>
+    </div>
+    <div class="feat">
+      <img src="timer.jpg" alt="Guided brew timer screen">
+      <h3>Taste fix and guided brew</h3>
+      <p>Sour means grind finer, bitter means coarser. A timer that walks you through every pour.</p>
+    </div>
+    <div class="feat">
+      <img src="water.jpg" alt="Water Lab screen">
+      <h3>Water Lab</h3>
+      <p>Specialty-grade brew water from supermarket minerals, measured to the gram.</p>
+    </div>
+  </section>
+
+  <footer><span>© 2026 Dialed In</span><a href="#join">Join the waitlist</a></footer>
+</div>
+<script>
+(() => {
+  const box = document.getElementById('tally'), id = box.dataset.tallyId.trim();
+  if (!id) {  // no form connected yet: show what it will look like, but never pretend to collect emails
+    box.innerHTML = '<form class="soon" onsubmit="return false"><input type="email" placeholder="you@email.com" disabled aria-label="Email"><button disabled>Waitlist opens soon</button></form>';
+    return;
+  }
+  box.innerHTML = `<iframe data-tally-src="https://tally.so/embed/${encodeURIComponent(id)}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="140" frameborder="0" title="Join the Dialed In waitlist"></iframe>`;
+  const s = document.createElement('script'); s.src = 'https://tally.so/widgets/embed.js';
+  s.onload = () => window.Tally && Tally.loadEmbeds(); document.body.appendChild(s);
+})();
+</script>
+</body>
+</html>
